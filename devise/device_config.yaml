@@ -1,0 +1,89 @@
+devices:
+#  -
+#    name: dummy1
+#    type: DummyDevice
+#    transport:
+#      type: dummy
+#  -
+#    name: b1500a_smu
+#    type: B1500A
+#    protocol: visa
+#    transport:
+#      type: visa
+#      address: TCPIP0::192.168.81.2::agb1500a
+
+  -
+    name: ktl
+    type: Keithley_2450
+    protocol: visa
+    transport:
+      type: visa
+      address: "TCPIP0::192.168.81.9::inst0::INSTR"
+
+  -
+    name: rigol
+    type: Rigol_DP832
+    protocol: visa
+    transport:
+      type: visa
+      address: "TCPIP0::192.168.81.12::INSTR"
+
+  -
+    name: rigol2
+    type: Rigol_DP832
+    protocol: visa
+    transport:
+      type: visa
+      address: "TCPIP0::192.168.81.11::INSTR"
+
+  -
+    name: generator
+    type: A81160
+    protocol: visa
+    transport:
+      type: visa
+      address: TCPIP0::192.168.81.7::inst0::INSTR
+#
+#  -
+#    name: generator2
+#    type: M8190A
+#    protocol: visa
+#    transport:
+#      type: visa
+#      address: TCPIP0::DESKTOP-91RD4EM::inst0::instr
+#  -
+#    name: tek_osc
+#    type: MSO4104
+#    protocol: visa
+#    transport:
+#      type: visa
+#      address: TCPIP0::10.1.1.4::INSTR
+#  -
+#    name: tek_osc2
+#    type: MSO5800
+#    protocol: visa
+#    transport:
+#      type: visa
+#      address: TCPIP0::10.1.1.5::INSTR
+  -
+    name: oscilloscope
+    type: MSO6400
+    protocol: visa
+    transport:
+      type: visa
+      address: TCPIP0::192.168.81.6::INSTR
+  -
+    name: gen5352
+    type: DG5352
+    protocol: visa
+    transport:
+      type: visa
+      address: "USB0::0x1AB1::0x0640::DG5T185350021::INSTR"
+  -
+    name: ktl_usb
+    type: Keithley_2450
+    protocol: visa
+    transport:
+      type: visa
+      address: "USB0::0x05E6::0x2450::04131625::INSTR"
+      
